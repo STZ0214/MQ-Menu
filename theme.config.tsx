@@ -29,8 +29,17 @@ const config: DocsThemeConfig = {
   },
   primaryHue: 350, // Reddish tint
   banner: {
-    key: 'grand-opening',
-    text: '🎉 Weekday Beer Special: $5 for all domestic beers and $6 for all imported beers!',
+    key: 'beer-specials',
+    text: (
+      <div className="truncate whitespace-nowrap px-2">
+        <span className="hidden md:inline">
+          🎉 Weekday Beer Special: $5 Domestic / $6 Imported
+        </span>
+        <span className="md:hidden">
+          🎉 $5 Dom. • $6 Imp. Beers.
+        </span>
+      </div>
+    ),
   }
 }
 
