@@ -1,53 +1,74 @@
 import Image from 'next/image';
+import Link from 'next/link';
 
 # Welcome to MASTER Q BILLIARD & LOUNGE
 
-Where Great Shots Meet Great Drinks
-
-
-
-## Featured This Week
-
-<div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
-
-### 🍔 Burger & Beer Combo  
-$22 - *Limited time offer*
-
-### 🎱 Free Table Rental  
-With 3 drink orders (Mon-Thu)
-
-### 🥃 Whiskey Tasting Night  
-Every Wednesday 8PM
-
+<div className="text-center mb-8">
+  <div className="relative h-64 sm:h-96 w-full rounded-lg overflow-hidden shadow-lg">
+    <Image 
+      src="/images/venue.jpg" 
+      layout="fill"
+      objectFit="cover"
+      alt="Modern Billard Lounge"
+      priority
+    />
+    <div className="absolute inset-0 bg-black/30 flex items-center justify-center">
+      <h2 className="text-2xl sm:text-4xl font-bold text-white drop-shadow-lg">
+        Where Great Shots Meet Great Drinks
+      </h2>
+    </div>
+  </div>
 </div>
 
-## Quick Links
+## Quick Access
 
-<div className="grid grid-cols-2 gap-4 mt-12">
-  <a 
-    href="/food" 
-    className="p-4 bg-red-100 rounded-lg text-center hover:bg-red-200 transition-colors"
+<div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
+  <Link
+    href="/billards"
+    className="group p-6 bg-gray-800 hover:bg-gray-700 rounded-lg transition-all shadow-md block"
   >
-    View Full Menu →
-  </a>
-  <a 
-    href="/booking" 
-    className="p-4 bg-blue-100 rounded-lg text-center hover:bg-blue-200 transition-colors"
+    <div className="text-center">
+      <h3 className="text-xl font-semibold text-white mb-2">🎱 Billiard Rates & Packages</h3>
+      <p className="text-gray-300 group-hover:text-white">
+        View table rates and special packages
+      </p>
+    </div>
+  </Link>
+
+  <Link
+    href="/food"
+    className="group p-6 bg-red-800 hover:bg-red-700 rounded-lg transition-all shadow-md block"
   >
-    Book a Table →
-  </a>
+    <div className="text-center">
+      <h3 className="text-xl font-semibold text-white mb-2">🍔 Food & Drinks Menu</h3>
+      <p className="text-gray-300 group-hover:text-white">
+        Explore our kitchen and bar offerings
+      </p>
+    </div>
+  </Link>
 </div>
 
 ---
 
-**Follow Us**  
-[Instagram](https://www.instagram.com/masterq.billiards/?hl=en) | [Facebook](https://www.facebook.com/pages/Master%20Q%20Billiards%20&%20Lounge/151066128275191/)
-
-
-## Happy Hour (Monday to Friday 11AM-6PM)
-
-<div class="bg-yellow-100 p-4 rounded-lg">
-- All Draft Beers: $5
-- House Wines: $6
-- Appetizers: 20% off
+<div className="mt-12 text-center space-y-4">
+  <h3 className="text-xl font-semibold">Stay Connected</h3>
+  <div className="flex justify-center space-x-6">
+    <a 
+      href="https://www.instagram.com/masterq.billiards/?hl=en" 
+      target="_blank" 
+      rel="noopener noreferrer"
+      className="text-pink-500 hover:text-pink-400 transition-colors"
+    >
+      Instagram
+    </a>
+    <span className="text-gray-400">|</span>
+    <a 
+      href="https://www.facebook.com/pages/Master%20Q%20Billiards%20&%20Lounge/151066128275191/" 
+      target="_blank" 
+      rel="noopener noreferrer"
+      className="text-blue-600 hover:text-blue-500 transition-colors"
+    >
+      Facebook
+    </a>
+  </div>
 </div>

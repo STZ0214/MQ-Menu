@@ -12,8 +12,45 @@
     margin: 0 4px;
   }
 
-  [data-banner] div {
-    font-size: clamp(0.8rem, 2vw, 1rem);
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
+
+/* Banner Scroll Animation*/
+.banner-scroll {
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
+    animation: marquee 16s linear infinite;
   }
+  
+  @keyframes marquee {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+  }
+  
+  /* Optional: Add gradient fade effect */
+  [data-banner] {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  [data-banner]::before,
+  [data-banner]::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 50px;
+    z-index: 1;
+  }
+  
+  [data-banner]::before {
+    left: 0;
+    background: linear-gradient(to right, var(--bg-color), transparent);
+  }
+  
+  [data-banner]::after {
+    right: 0;
+    background: linear-gradient(to left, var(--bg-color), transparent);
+  }
+
+
+  

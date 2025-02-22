@@ -4,15 +4,9 @@ import { DocsThemeConfig } from 'nextra-theme-docs'
 const config: DocsThemeConfig = {
   logo: (
     <span style={{ fontWeight: 600, fontSize: '1.2rem' }}>
-      🎱 Master Q Snooker, Billiards & Lounge
+      🎱 Master Q
     </span>
   ),
-  project: {
-    link: 'https://github.com/shuding/nextra-docs-template',
-  },
-  chat: {
-    link: 'https://discord.com',
-  },
   docsRepositoryBase: 'https://github.com/shuding/nextra-docs-template',
   footer: {
     text: (
@@ -31,15 +25,10 @@ const config: DocsThemeConfig = {
   banner: {
     key: 'beer-specials',
     text: (
-      <div className="truncate whitespace-nowrap px-2">
-        <span className="hidden md:inline">
-          🎉 Weekday Beer Special: $5 Domestic / $6 Imported
-        </span>
-        <span className="md:hidden">
-          🎉 $5 Dom. • $6 Imp. Beers.
-        </span>
+      <div className="banner-scroll px-2">
+        🎉 Weekday Beer Special: $5 for all domestic beers & $6 for all imported beers!
       </div>
-    ),
+    )
   }
 }
 
