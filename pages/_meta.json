@@ -1,15 +1,15 @@
 {
-  "index": "Introduction",
-  "another": "Another Page",
-  "advanced": "Advanced (A Folder)",
+  "index": "Home",
+  "menu": "Menu (Food & Drinks)",
+  "billards": "Billiards",
   "about": {
-    "title": "About",
+    "title": "About Us",
     "type": "page"
   },
   "contact": {
     "title": "Contact ↗",
     "type": "page",
-    "href": "https://twitter.com/shuding_",
+    "href": "https://www.facebook.com/pages/Master%20Q%20Billiards%20&%20Lounge/151066128275191/",
     "newWindow": true
   }
 }
