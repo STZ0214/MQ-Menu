@@ -3,70 +3,60 @@ import Link from 'next/link';
 
 # Welcome to MASTER Q BILLIARD & LOUNGE
 
-<div className="text-center mb-8">
-  <div className="relative h-64 sm:h-96 w-full rounded-lg overflow-hidden shadow-lg">
-    <Image 
-      src="/images/venue.jpg" 
-      layout="fill"
-      objectFit="cover"
-      alt="Modern Billard Lounge"
-      priority
-    />
-    <div className="absolute inset-0 bg-black/30 flex items-center justify-center">
-      <h2 className="text-2xl sm:text-4xl font-bold text-white drop-shadow-lg">
-        Where Great Shots Meet Great Drinks
-      </h2>
-    </div>
+<div className="hero-container">
+  <Image 
+    src="/images/venue.jpg" 
+    layout="fill"
+    objectFit="cover"
+    alt="Modern Billard Lounge"
+    priority
+  />
+  <div className="hero-text">
+    <h2>Where Great Shots Meet Great Drinks</h2>
   </div>
 </div>
 
 ## Quick Access
 
-<div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
-  <Link
-    href="/billards"
-    className="group p-6 bg-gray-800 hover:bg-gray-700 rounded-lg transition-all shadow-md block"
-  >
-    <div className="text-center">
-      <h3 className="text-xl font-semibold text-white mb-2">🎱 Billiard Rates & Packages</h3>
-      <p className="text-gray-300 group-hover:text-white">
-        View table rates and special packages
-      </p>
-    </div>
+<div className="quick-access-grid">
+  <Link href="/billards" passHref legacyBehavior>
+    <a className="nav-card billiards">
+      <div>
+        <h3>🎱 Billiard Rates & Packages</h3>
+        <p>View table rates and special packages</p>
+      </div>
+    </a>
   </Link>
 
-  <Link
-    href="/food"
-    className="group p-6 bg-red-800 hover:bg-red-700 rounded-lg transition-all shadow-md block"
-  >
-    <div className="text-center">
-      <h3 className="text-xl font-semibold text-white mb-2">🍔 Food & Drinks Menu</h3>
-      <p className="text-gray-300 group-hover:text-white">
-        Explore our kitchen and bar offerings
-      </p>
-    </div>
+  <Link href="/food" passHref legacyBehavior>
+    <a className="nav-card food">
+      <div>
+        <h3>🍔 Food & Drinks Menu</h3>
+        <p>Explore our kitchen and bar offerings</p>
+      </div>
+    </a>
   </Link>
 </div>
 
 ---
 
-<div className="mt-12 text-center space-y-4">
-  <h3 className="text-xl font-semibold">Stay Connected</h3>
-  <div className="flex justify-center space-x-6">
+<div className="social-container">
+  <h3>Stay Connected</h3>
+  <div className="social-links">
     <a 
       href="https://www.instagram.com/masterq.billiards/?hl=en" 
       target="_blank" 
       rel="noopener noreferrer"
-      className="text-pink-500 hover:text-pink-400 transition-colors"
+      className="instagram-link"
     >
       Instagram
     </a>
-    <span className="text-gray-400">|</span>
+    <span className="divider">|</span>
     <a 
       href="https://www.facebook.com/pages/Master%20Q%20Billiards%20&%20Lounge/151066128275191/" 
       target="_blank" 
       rel="noopener noreferrer"
-      className="text-blue-600 hover:text-blue-500 transition-colors"
+      className="facebook-link"
     >
       Facebook
     </a>

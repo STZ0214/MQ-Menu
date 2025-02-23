@@ -53,4 +53,96 @@
   }
 
 
-  
+  /* index page style */
+.hero-container {
+  position: relative;
+  height: 300px;
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+}
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+
+.quick-access-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.nav-card {
+  padding: 1.5rem;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: block;
+}
+
+.nav-card.billiards {
+  background-color: #2d3748;
+  color: white;
+}
+
+.nav-card.billiards p {
+  color: #cbd5e0;
+}
+
+.nav-card.food {
+  background-color: #991b1b;
+  color: white;
+}
+
+.nav-card.food p {
+  color: #fecaca;
+}
+
+.social-container {
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.instagram-link {
+  color: #ec4899;
+  text-decoration: none;
+}
+
+.facebook-link {
+  color: #3b5998;
+  text-decoration: none;
+}
+
+.divider {
+  color: #718096;
+}
+
+/* Add to globals.css */
+.nav-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.instagram-link:hover {
+  color: #db2777;
+}
+
+.facebook-link:hover {
+  color: #2d4373;
+}
