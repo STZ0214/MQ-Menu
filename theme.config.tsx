@@ -24,7 +24,7 @@ const config: DocsThemeConfig = {
       </div>
     ),
   },
-  primaryHue: 350, // Reddish tint
+  primaryHue: 500, // Reddish tint
   banner: {
     key: 'beer-specials',
     text: (
