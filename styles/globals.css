@@ -146,3 +146,24 @@
 .facebook-link:hover {
   color: #2d4373;
 }
+
+
+/* Membership Part Color Style */
+.membership-notice {
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  margin: 1.5rem 0;
+  border-left: 4px solid #d97706; /* Amber-600 */
+}
+
+/* Light mode */
+.membership-notice {
+  background-color: #fffbeb; /* Yellow-50 */
+  color: #78350f; /* Yellow-900 */
+}
+
+/* Dark mode */
+.dark .membership-notice {
+  background-color: rgba(253, 224, 71, 0.1); /* Yellow-300 with 10% opacity */
+  color: #fef3c7; /* Yellow-100 */
+}

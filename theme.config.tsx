@@ -7,6 +7,9 @@ const config: DocsThemeConfig = {
       🎱 Master Q
     </span>
   ),
+  search: {
+    placeholder: "Search anything...", // Custom placeholder
+  },
   docsRepositoryBase: 'https://github.com/shuding/nextra-docs-template',
   footer: {
     text: (
@@ -26,7 +29,7 @@ const config: DocsThemeConfig = {
     key: 'beer-specials',
     text: (
       <div className="banner-scroll px-2">
-        🎉 Weekday Beer Special: $5 for all domestic beers & $6 for all imported beers!
+        🎉 Weekday Beer Special: $5 for all domestic beers and $6 for all imported beers!
       </div>
     )
   }
