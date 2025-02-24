@@ -18,21 +18,30 @@ import Link from 'next/link';
 
 ## Quick Access
 
-<div className="quick-access-grid">
+<div className="quick-access-grid three-col">
   <Link href="/billards" passHref legacyBehavior>
     <a className="nav-card billiards">
       <div>
-        <h3>🎱 Billiard Rates & Packages</h3>
-        <p>View table rates and special packages</p>
+        <h3>🎱 Billiard Rates</h3>
+        <p>Table packages & hourly rates</p>
       </div>
     </a>
   </Link>
 
-  <Link href="/menu" passHref legacyBehavior>
+  <Link href="/food" passHref legacyBehavior>
     <a className="nav-card food">
       <div>
-        <h3>🍔 Food & Drinks Menu</h3>
-        <p>Explore our kitchen and bar offerings</p>
+        <h3>🍔 Food Menu</h3>
+        <p>Snacks, mains & late-night bites</p>
+      </div>
+    </a>
+  </Link>
+
+  <Link href="/drink" passHref legacyBehavior>
+    <a className="nav-card drinks">
+      <div>
+        <h3>🍹 Drinks Menu</h3>
+        <p>Beers, cocktails & non-alcoholic</p>
       </div>
     </a>
   </Link>

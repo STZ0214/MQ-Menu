@@ -234,3 +234,29 @@
   transform: translateY(-2px);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
+
+
+/* 3-column grid */
+.quick-access-grid.three-col {
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+@media (min-width: 1024px) {
+  .quick-access-grid.three-col {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* New drinks card color */
+.nav-card.drinks {
+  background-color: #1e40af; /* Blue-800 */
+  color: white;
+}
+
+.dark .nav-card.drinks {
+  background-color: #1e3a8a; /* Blue-900 */
+}
+
+.nav-card.drinks p {
+  color: #bfdbfe; /* Blue-200 */
+}
