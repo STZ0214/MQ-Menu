@@ -1,56 +1,71 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
-# Master Q Menu
+# Master Q Food
 
 <Image 
-  src="/images/menu-hero.jpg"
+  src="/images/food-hero.jpg"
   width={1200}
   height={800}
-  alt="Our menu offerings"
+  alt="Our food menu"
   className="menu-hero-image"
 />
 
 <div className="grid-menu">
   <div className="menu-card">
-    <Link href="/menu/food">
-      <h2 className="hover:text-red-600">
-        🍔 Food Menu
+    <Link href="/food/rice">
+      <h2 className="hover:text-yellow-600">
+        �‍🍚 Rice Dishes
       </h2>
     </Link>
     <p className="text-gray-600 dark:text-gray-300">
-      Discover our kitchen favorites including appetizers, main courses, 
-      and late-night snacks perfect for your game nights.
+      Fried rice, curry rice, and other rice-based meals
     </p>
   </div>
 
   <div className="menu-card">
-    <Link href="/menu/drinks">
-      <h2 className="hover:text-blue-600">
-        🍹 Drinks Menu
+    <Link href="/food/frie-rice-noodle">
+      <h2 className="hover:text-orange-600">
+        🍜 Noodles
       </h2>
     </Link>
     <p className="text-gray-600 dark:text-gray-300">
-      Explore our extensive selection of craft beers, cocktails, 
-      and non-alcoholic beverages.
+      Chow mein, pho, and other noodle dishes
+    </p>
+  </div>
+
+  <div className="menu-card">
+    <Link href="/food/sandwichs">
+      <h2 className="hover-text-brown-600">
+        🥪 Sandwiches
+      </h2>
+    </Link>
+    <p className="text-gray-600 dark:text-gray-300">
+      Burgers, subs, and paninis
+    </p>
+  </div>
+
+  <div className="menu-card">
+    <Link href="/food/snacks">
+      <h2 className="hover:text-red-600">
+        🍟 Snacks
+      </h2>
+    </Link>
+    <p className="text-gray-600 dark:text-gray-300">
+      Wings, fries, nachos, and other shareables
     </p>
   </div>
 </div>
 
 <div className="happy-hour">
-  <h3 className="text-xl font-bold mb-4">🎉 Weekday Beer Special</h3>
+  <h3 className="text-xl font-bold mb-4">🎉 Food Specials</h3>
   <ul className="list-disc pl-6 space-y-2">
-    <li>Monday - Thursday</li>
-    <li>$5 Domestic Beers</li>
-    <li>$6 Imported Beers</li>
+    <li>Happy Hour: 20% Off Appetizers</li>
+    <li>Weekend Brunch: 11AM-3PM</li>
+    <li>Late Night: 50% Off Snacks after 10PM</li>
   </ul>
 </div>
 
 <div className="menu-footer">
-  <p>Have dietary restrictions? Ask our staff about allergy-friendly options!</p>
-  <div className="mt-4 flex justify-center space-x-4">
-    <a href="/about" className="hover:text-red-600">About Us</a>
-    <span>•</span>
-    <a href="/contact" className="hover:text-blue-600">Contact</a>
-  </div>
+  <Link href="/drink" className="hover:text-blue-600">View Drink Menu →</Link>
 </div>
