@@ -1,7 +1,8 @@
 {
   "index": "Home",
   "billards": "Billiards",
-  "menu": "Menu (Food & Drinks)",
+  "drink": "Drink Menu",
+  "food": "Food Menu",
   "about": {
     "title": "About Us",
     "type": "page"
