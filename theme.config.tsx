@@ -4,7 +4,7 @@ import { DocsThemeConfig } from 'nextra-theme-docs'
 const config: DocsThemeConfig = {
   logo: (
     <span style={{ fontWeight: 600, fontSize: '1.2rem' }}>
-      🎱 Master Q
+      🎱 MASTER Q
     </span>
   ),
   search: {
