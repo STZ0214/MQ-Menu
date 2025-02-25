@@ -260,3 +260,48 @@
 .nav-card.drinks p {
   color: #bfdbfe; /* Blue-200 */
 }
+
+
+/* Add promo notice styling */
+.promo-notice {
+  background: #fef9c3;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  margin: 2rem 0;
+  border-left: 4px solid #f59e0b;
+}
+
+.dark .promo-notice {
+  background: rgba(253, 224, 71, 0.1);
+  color: #fef3c7;
+}
+
+
+/* Additional color schemes */
+.nav-card.sake-soju {
+  background-color: #fb923c; /* Orange-400 */
+  color: white;
+}
+.dark .nav-card.sake-soju {
+  background-color: #9a3412; /* Orange-900 */
+}
+
+.nav-card.spirits {
+  background-color: #0d9488; /* Teal-600 */
+  color: white;
+}
+.dark .nav-card.spirits {
+  background-color: #134e4a; /* Teal-900 */
+}
+
+/* Grid adjustments */
+.grid-menu {
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+@media (min-width: 1024px) {
+  .grid-menu {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

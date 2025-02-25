@@ -19,7 +19,7 @@ import Link from 'next/link';
       </h2>
     </Link>
     <p className="text-gray-600 dark:text-gray-300">
-      Domestic, imported, and draft beers. Try our weekday specials!
+      Domestic, imported, and draft beers with weekday specials
     </p>
   </div>
 
@@ -30,7 +30,7 @@ import Link from 'next/link';
       </h2>
     </Link>
     <p className="text-gray-600 dark:text-gray-300">
-      Classic and signature cocktails. Ask about our daily specials!
+      Classic & signature mixed drinks, daily specials available
     </p>
   </div>
 
@@ -41,7 +41,29 @@ import Link from 'next/link';
       </h2>
     </Link>
     <p className="text-gray-600 dark:text-gray-300">
-      Try our popular Jägerbombs, Vegas Bombs, and other shooters
+      Try our popular Jägerbombs and specialty shot combinations
+    </p>
+  </div>
+
+  <div className="menu-card">
+    <Link href="/drink/sake-soju">
+      <h2 className="hover:text-orange-600">
+        🍶 Sake & Soju
+      </h2>
+    </Link>
+    <p className="text-gray-600 dark:text-gray-300">
+      Japanese sake and Korean soju varieties
+    </p>
+  </div>
+
+  <div className="menu-card">
+    <Link href="/drink/spirits">
+      <h2 className="hover:text-teal-600">
+        🥃 Premium Spirits
+      </h2>
+    </Link>
+    <p className="text-gray-600 dark:text-gray-300">
+      Whisky, cognac, bourbon, and specialty liqueurs
     </p>
   </div>
 
@@ -52,20 +74,19 @@ import Link from 'next/link';
       </h2>
     </Link>
     <p className="text-gray-600 dark:text-gray-300">
-      Soft drinks, juices, and specialty mocktails
+      Smoothies, mocktails, teas, and specialty drinks
     </p>
   </div>
 </div>
 
 <div className="happy-hour">
-  <h3 className="text-xl font-bold mb-4">🎉 Drink Specials</h3>
+  <h3 className="text-xl font-bold mb-4">🎉 Weekday Beer Special</h3>
   <ul className="list-disc pl-6 space-y-2">
-    <li>Weekdays 4PM-7PM: $5 Domestic Beers</li>
-    <li>Thursday Ladies Night: 50% Off Cocktails</li>
-    <li>Sunday Funday: $5 Shooters All Day</li>
+    <li>$5 Domestic Beers</li>
+    <li>$6 Imported Beers</li>
   </ul>
 </div>
 
 <div className="menu-footer">
-  <Link href="/food" className="hover:text-red-600">View Food Menu →</Link>
+  <Link href="/food" className="hover:text-red-600">Explore Food Menu →</Link>
 </div>

@@ -1,14 +1,55 @@
 import Image from 'next/image';
+import Link from 'next/link';
 
-# Craft Cocktails
+# Cocktail Menu
 
-<Image src="/images/cocktails.jpg" width={1200} height={800} alt="Craft Cocktails" />
+<Image 
+  src="/images/cocktail-hero.avif"
+  width={1200}
+  height={400}
+  alt="Craft Cocktails"
+  className="menu-hero-image"
+/>
 
-## Signature Drinks
+## Classic Cocktails (1oz or 1.5oz)  
+**$9.50 each**  
+- Black/White Russian *(Vodka)*  
+- Bloody Mary/Caesar *(Vodka)*  
+- Blue Hawaiian *(Rum)*  
+- Brandy Alexander *(Brandy, Crème de Cacao)*  
+- Brown Cow *(Kahlua)*  
+- Daiquiri *(Rum)*  
+- Dry Martini *(Gin, Dry Vermouth)*  
+- Grasshopper *(Crème de Menthe, White Crème de Cacao)*  
+- Margarita *(Tequila, Triple Sec)*  
+- Piña Colada *(Rum)*  
+- Pink Lady *(Gin)*  
+- Screwdriver *(Vodka)*  
+- Sex on the Beach *(Peachtree Schnapps)*  
+- Tequila Sunrise *(Tequila)*  
+- Whisky Sour *(Whisky)*  
+- XYZ *(Rum, Triple Sec)*  
 
-| Item               | Ingredients                          | Price |
-|--------------------|--------------------------------------|-------|
-| Billiard Ball      | Bourbon, maple syrup, walnut bitters | $14   |
-| Cue Stick Colada   | Rum, pineapple, coconut cream        | $12   |
-| 8-Ball Old Fashioned| Whiskey, demerara syrup, orange zest | $15   |
+## Premium Cocktails (2oz)  
+**$11.49 each**  
+- After Eight *(Kahlua, Crème de Menthe, Bailey's, Southern Comfort)*  
+- B-52 *(Kahlua, Bailey's, Grand Marnier)*  
+- Ferrari *(Rye Whisky, Red Wine)*  
+- Long Island Iced Tea *(Gin, Rum, Vodka, Tequila, Triple Sec)*  
 
+## Special Drinks (1.5oz)  
+**$10.49 each**  
+- B-52 Coffee *(Kahlua, Bailey's, Grand Marnier)*  
+- Café Di Amaretto  
+- Blueberry Tea *(Amaretto, Grand Marnier)*  
+
+## Seasonal & Specials  
+- Jägerbomb - **$11.49**  
+- Mojito *(Summer only)* - **$10.25**  
+
+---
+
+<div className="menu-footer">
+  <p>Ask our bartenders about custom cocktail creations!</p>
+  <Link href="/drink" className="hover-text-blue-600">← Back to Drink Menu</Link>
+</div>

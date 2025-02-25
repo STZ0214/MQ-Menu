@@ -1,56 +1,67 @@
 import Image from 'next/image';
+import Link from 'next/link';
 
 # Beer Menu
 
 <Image 
   src="/images/beer-hero.jpg"
   width={1200}
-  height={800}
-  alt="Our Beers selection"
+  height={400}
+  alt="Craft Beer Selection"
   className="menu-hero-image"
 />
 
 ## Domestic Beers
-**All Domestic Bottles**  
-**$5.49** each  
-- Alexander Keith's  
+**All Domestic Bottles $6.25**  
+- Alexander Keith  
 - Budweiser  
+- Bud Light  
 - Canadian  
 - Coors Light  
-- Miller Genuine Draft - **$5.99**  
-- Bud Light - **$6.49**
+- Labatt Blue  
+
+**Premium Domestic**  
+- Miller Genuine Draft - $6.75  
 
 ## Imported Beers 
-**All Imported Bottles**  
-**$6.49** each  
+**Imported Bottles $7.75**  
 - Rickard’s Red  
-- Corona (Mexico)  
-- Heineken (Netherlands)  
-- Hoegaarden (Belgium)  
-- Stella Artois (Belgium)  
-- Guinness (Ireland)
+- Corona *(Mexico)*  
+- Heineken *(Netherlands)*  
+- Hoegaarden *(Belgium)*  
+- Stella Artois *(Belgium)*  
+
+**Special Import**  
+- Guinness *(Ireland, 500ml can)* - $10.99
 
 ## Draft Beers
-**Available Drafts**  
-- Sapporo  
-- Stella Artois  
-- Heineken  
-- Rickard’s Red  
-- Alexander Keith's  
-- Budweiser  
-- Canadian  
-- Coors Light
+<div className="overflow-x-auto">
+| Beer Type                   | Pint (20oz) | Pitcher (60oz) | Tower (120oz) |
+|-----------------------------|-------------|----------------|---------------|
+| Moosehead Lager             | $8.50       | $22.00         | $40.00        |
+| Sapporo                     | $8.50       | $22.00         | $40.00        |
+| Canadian/Budweiser/Coors Light | $8.75      | $23.00         | $43.00        |
+| Kronenbourg 1664/Alexander Keith | $9.00 | $24.00 | $45.00 |
+| Rickard’s Red               | $9.00       | $24.00         | $45.00        |
+| Heineken/Stella Artois      | $9.25       | $27.00         | $48.00        |
+</div>
 
-**Draft Prices**  
-- Glass (20oz) - **$7.49**  
-- Pitcher (60oz) - **$19.99**  
-- Large Tower (150oz) - **$49.99**
+## Ciders
+<div className="overflow-x-auto">
+| Beer Type                   | Pint (20oz) | Pitcher (60oz) | Tower (120oz) |
+|-----------------------------|-------------|----------------|---------------|
+| Somersby | $9.00 | $24.00 | $45.00 |
+</div>
 
 <div className="membership-notice mt-6">
-  🎱 **Members Save!** Present your Master Q membership card for 10% off all draft orders
+  🎱 **Members Save 0%** on all draft beer orders!
 </div>
 
 ---
 
-**Happy Hour Special**  
-4PM-7PM Daily: $2 off all draft beers
+**Weekday Beer Special**  
+$5 for all domestic beers and $6 for all imported beers!
+
+<div className="menu-footer">
+  <Link href="/drink" className="hover-text-blue-600">← Back to Drink Menu</Link>
+</div>
