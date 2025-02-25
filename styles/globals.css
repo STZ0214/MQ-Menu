@@ -94,6 +94,10 @@
   color: white;
 }
 
+.dark .nav-card.billiards:hover {
+  background-color: #425169;
+}
+
 .nav-card.billiards p {
   color: #cbd5e0;
 }
@@ -101,6 +105,10 @@
 .nav-card.food {
   background-color: #991b1b;
   color: white;
+}
+
+.dark .nav-card.food:hover {
+  background-color: #a93030;
 }
 
 .nav-card.food p {
@@ -251,6 +259,10 @@
 .nav-card.drinks {
   background-color: #1e40af; /* Blue-800 */
   color: white;
+}
+
+.dark .nav-card.drinks:hover {
+  background-color: #254bb2;
 }
 
 .dark .nav-card.drinks {
