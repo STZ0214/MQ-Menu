@@ -1,9 +1,13 @@
 .footer-content {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    text-align: center;
-    font-size: 0.9rem;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  text-align: center;
+  font-size: 0.9rem;
+  width: 100%; /* Ensure full width */
+  align-items: center; /* Center content horizontally */
+  justify-content: center; /* Center content vertically */
+  padding: 1rem 0; /* Add some padding */
   }
   
   .footer-content a {
@@ -11,6 +15,8 @@
     text-decoration: underline;
     margin: 0 4px;
   }
+
+  
 
 
 /* Banner Scroll Animation*/
@@ -94,6 +100,10 @@
   color: white;
 }
 
+.nav-card.billiards:hover {
+  background-color: #425169;
+}
+
 .dark .nav-card.billiards:hover {
   background-color: #425169;
 }
@@ -107,8 +117,12 @@
   color: white;
 }
 
+.nav-card.food:hover {
+  background-color: #ba1b1b;
+}
+
 .dark .nav-card.food:hover {
-  background-color: #a93030;
+  background-color: #ba1b1b;
 }
 
 .nav-card.food p {
@@ -261,6 +275,10 @@
   color: white;
 }
 
+.nav-card.drinks:hover {
+  background-color: #254bb2;
+}
+
 .dark .nav-card.drinks:hover {
   background-color: #254bb2;
 }
@@ -316,4 +334,70 @@
   .grid-menu {
     grid-template-columns: repeat(3, 1fr);
   }
+}
+
+
+
+/* Snacks Grid Layout */
+.snacks-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+  padding: 1.5rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.snack-card {
+  border-radius: 0.5rem;
+  overflow: hidden;
+  background: white;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
+}
+
+.snack-card:hover {
+  transform: translateY(-4px);
+}
+
+.snack-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.snack-info {
+  padding: 1.25rem;
+}
+
+.snack-info h3 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.price {
+  color: #f87171;
+  font-weight: 700;
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .snacks-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding: 1rem;
+  }
+}
+
+/* Dark Mode */
+.dark .snack-card {
+  background: #1f2937;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+}
+
+.dark .snack-info h3 {
+  color: #f3f4f6;
 }

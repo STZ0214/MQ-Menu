@@ -29,7 +29,7 @@ const config: DocsThemeConfig = {
     key: 'beer-specials',
     text: (
       <div className="banner-scroll px-2">
-        🎉 Weekday Beer Special: $5 for all domestic beers and $6 for all imported beers!
+        🎉 Weekday Beer Bottle Special: $5 for all domestic beers and $6 for all imported beers!
       </div>
     )
   }
