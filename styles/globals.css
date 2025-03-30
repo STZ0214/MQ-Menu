@@ -401,3 +401,121 @@
 .dark .snack-info h3 {
   color: #f3f4f6;
 }
+
+
+
+/* Sandwiches Menu Styles */
+.sandwich-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1rem;
+  padding: 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.sandwich-card {
+  background: white;
+  border-radius: 0.5rem;
+  padding: 1.25rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
+}
+
+.sandwich-card:hover {
+  transform: translateY(-2px);
+}
+
+.sandwich-info h3 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.chinese {
+  display: block;
+  font-size: 0.9rem;
+  color: #666;
+  margin-top: 0.25rem;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .sandwich-grid {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+  }
+  
+  .sandwich-card {
+    padding: 1rem;
+  }
+}
+
+/* Dark Mode */
+.dark .sandwich-card {
+  background: #1f2937;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+.dark .sandwich-info h3 {
+  color: #f3f4f6;
+}
+
+.dark .chinese {
+  color: #9ca3af;
+}
+
+
+
+/* Pasta Menu Styles */
+.pasta-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+  padding: 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.pasta-card {
+  background: white;
+  border-radius: 0.5rem;
+  padding: 1.25rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
+}
+
+.pasta-card:hover {
+  transform: translateY(-2px);
+}
+
+.pasta-info h3 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+/* Reuse existing .chinese and .price classes from sandwiches */
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .pasta-grid {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+  }
+  
+  .pasta-card {
+    padding: 1rem;
+  }
+}
+
+/* Dark Mode */
+.dark .pasta-card {
+  background: #1f2937;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+.dark .pasta-info h3 {
+  color: #f3f4f6;
+}
