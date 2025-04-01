@@ -1,9 +1,9 @@
-import Image from 'next/image';
-import Link from 'next/link';
+import Image from "next/image";
+import Link from "next/link";
 
 # Master Q Food
 
-<Image 
+<Image
   src="/images/food-hero.jpg"
   width={1200}
   height={800}
@@ -12,39 +12,7 @@ import Link from 'next/link';
 />
 
 <div className="grid-menu">
-  <div className="menu-card">
-    <Link href="/food/rice">
-      <h2 className="hover:text-yellow-600">
-        �‍🍚 Rice Dishes
-      </h2>
-    </Link>
-    <p className="text-gray-600 dark:text-gray-300">
-      Fried rice, curry rice, and other rice-based meals
-    </p>
-  </div>
-
-  <div className="menu-card">
-    <Link href="/food/frie-rice-noodle">
-      <h2 className="hover:text-orange-600">
-        🍜 Noodles
-      </h2>
-    </Link>
-    <p className="text-gray-600 dark:text-gray-300">
-      Chow mein, pho, and other noodle dishes
-    </p>
-  </div>
-
-  <div className="menu-card">
-    <Link href="/food/sandwichs">
-      <h2 className="hover-text-brown-600">
-        🥪 Sandwiches
-      </h2>
-    </Link>
-    <p className="text-gray-600 dark:text-gray-300">
-      Burgers, subs, and paninis
-    </p>
-  </div>
-
+ {/* Snacks */}
   <div className="menu-card">
     <Link href="/food/snacks">
       <h2 className="hover:text-red-600">
@@ -52,20 +20,87 @@ import Link from 'next/link';
       </h2>
     </Link>
     <p className="text-gray-600 dark:text-gray-300">
-      Wings, fries, nachos, and other shareables
+      Appetizers, fries, and shareable plates
     </p>
   </div>
+
+{/* Sandwiches */}
+
+{" "}
+<div className="menu-card">
+  <Link href="/food/sandwiches">
+    <h2 className="hover:text-amber-600">🥪 Sandwiches</h2>
+  </Link>
+  <p className="text-gray-600 dark:text-gray-300">
+    Burgers, toast, and specialty sandwiches
+  </p>
 </div>
 
-<div className="happy-hour">
-  <h3 className="text-xl font-bold mb-4">🎉 Food Specials</h3>
-  <ul className="list-disc pl-6 space-y-2">
-    <li>Happy Hour: 20% Off Appetizers</li>
-    <li>Weekend Brunch: 11AM-3PM</li>
-    <li>Late Night: 50% Off Snacks after 10PM</li>
-  </ul>
+{/* Spaghetti */}
+
+{" "}
+<div className="menu-card">
+  <Link href="/food/spaghetti">
+    <h2 className="hover:text-purple-600">🍝 Spaghetti</h2>
+  </Link>
+  <p className="text-gray-600 dark:text-gray-300">
+    Creamy and tomato-based pasta dishes
+  </p>
+</div>
+
+{/* Rice Dishes */}
+
+{" "}
+<div className="menu-card">
+  <Link href="/food/rice">
+    <h2 className="hover:text-yellow-600">🍚 Rice Dishes</h2>
+  </Link>
+  <p className="text-gray-600 dark:text-gray-300">
+    Fried rice, curry rice, and rice plates
+  </p>
+</div>
+
+{/* Soup Noodles */}
+
+{" "}
+<div className="menu-card">
+  <Link href="/food/soup-noodles">
+    <h2 className="hover:text-orange-600">🍜 Soup Noodles</h2>
+  </Link>
+  <p className="text-gray-600 dark:text-gray-300">
+    Wonton, beef, and fish ball noodle soups
+  </p>
+</div>
+
+{/* Baked Rice & Spaghetti */}
+
+{" "}
+<div className="menu-card">
+  <Link href="/food/baked-rice-&-spaghetti">
+    <h2 className="hover:text-blue-600">🧀 Baked Rice & Spaghetti</h2>
+  </Link>
+  <p className="text-gray-600 dark:text-gray-300">
+    Bolognese, seafood, and cheesy casseroles
+  </p>
+</div>
+
+{/* Fried Rice & Noodle */}
+
+  <div className="menu-card">
+    <Link href="/food/fried-rice-&-noodle">
+      <h2 className="hover:text-blue-600">
+        🍚 Fried Rice & Noodle
+      </h2>
+    </Link>
+    <p className="text-gray-600 dark:text-gray-300">
+      Beef, shrimp, and stir-fried classics
+    </p>
+  </div>
+  
 </div>
 
 <div className="menu-footer">
-  <Link href="/drink" className="hover:text-blue-600">Explore Drink Menu →</Link>
+  <Link href="/drink" className="hover:text-blue-600">
+    View Drink Menu →
+  </Link>
 </div>

@@ -519,3 +519,15 @@
 .dark .pasta-info h3 {
   color: #f3f4f6;
 }
+
+/* Grid adjustments for 6 items */
+.grid-menu {
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+@media (min-width: 1024px) {
+  .grid-menu {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
