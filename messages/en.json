@@ -1,0 +1,56 @@
+{
+  "home": {
+    "title": "Master Q Menu",
+    "quickAccess": {
+      "title": "Quick Access",
+      "billiards": {
+        "title": "🎱 Billiard Rates",
+        "description": "Table packages & hourly rates"
+      },
+      "food": {
+        "title": "🍔 Food Menu",
+        "description": "Snacks, mains & late-night bites"
+      },
+      "drinks": {
+        "title": "🍹 Drinks Menu",
+        "description": "Beers, cocktails & non-alcoholic"
+      }
+    },
+    "social": {
+      "stayConnected": "Stay Connected",
+      "instagram": "Instagram",
+      "facebook": "Facebook"
+    }
+  },
+  
+  "billards": {
+    "title": "Billard Tables & Rates",
+    "membership": {
+      "title": "Membership",
+      "benefits": "Membership Benefits",
+      "privileges": "Enjoy special privileges as a Master Q member:",
+      "waiveDayPass": "Waive DayPass fee for one table per visit",
+      "fee": "Membership Fee:",
+      "feeAmount": "$10/year",
+      "nonMemberNote": "Non-members will be charged a $3 Day Pass fee for each table."
+    },
+    "hourlyRates": {
+      "title": "Hourly Rates",
+      "tableType": "Table Type",
+      "dayRate": "Day Rate (11AM-6PM)",
+      "nightRate": "Night Rate (6PM-Close)",
+      "standardPool": "Standard Pool Tables",
+      "chinesePool": "Chinese Pool Tables",
+      "snooker": "Snooker Tables",
+      "rate18": "$18/hour",
+      "rate20": "$20/hour",
+      "rate22": "$22/hour"
+    },
+    "happyHour": {
+      "title": "Happy Hour (Monday to Friday 11AM-6PM)",
+      "standardPool": "Standard Pool Table: $25/person (before tax)",
+      "chinesePool": "Chinese Pool Table: $33/person (before tax)",
+      "snooker": "Snooker Table: $33/person (before tax)"
+    }
+  }
+}

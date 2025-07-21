@@ -531,3 +531,35 @@
     grid-template-columns: repeat(3, 1fr);
   }
 }
+
+
+
+/* Existing styles remain unchanged, replace the custom-heading section */
+
+/* Custom Heading Style */
+.custom-heading {
+  font-size: 2rem; /* Large text size */
+  font-weight: 700; /* Bold */
+  margin-bottom: 1rem; /* Space below text */
+  position: relative; /* For positioning the underline */
+  color: #000000; /* Explicitly black in light mode */
+}
+
+.custom-heading::after {
+  content: '';
+  position: absolute;
+  bottom: -0.5rem; /* Distance below text */
+  left: 0; /* Align with the left of the text */
+  width: 100%; /* Full width of the parent container */
+  height: 2px; /* Underline thickness */
+  background-color: #d7d7d7; /* Black underline in light mode */
+}
+
+.dark .custom-heading {
+  color: #ffffff; /* White in dark mode */
+}
+
+.dark .custom-heading::after {
+  background-color: #d1d5db; /* Light gray underline in dark mode */
+}
+

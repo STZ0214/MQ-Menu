@@ -1,42 +1,74 @@
 import Image from 'next/image';
+import { useTranslations } from 'next-intl';
 
-# Billard Tables & Rates
+export default function BillardsPage() {
+  const t = useTranslations('billards');
 
-<Image 
-  src="/images/billiards.jpg" 
-  width={1600} 
-  height={900} 
-  alt="Professional Billard Tables" 
-  className="menu-hero-image"
-/>
+  return (
+    <>
+      <h1>{t('title')}</h1>
 
-## Membership
+      <Image 
+        src="/images/billiards.jpg" 
+        width={1600} 
+        height={900} 
+        alt="Professional Billard Tables" 
+        className="menu-hero-image"
+      />
 
-<div className="membership-notice">
-  <h3>Membership Benefits</h3>
-  <p>Enjoy special privileges as a Master Q member:</p>
-  <ul>
-    <li>Waive DayPass fee for one table per visit</li>
-  </ul>
-  
-  <div className="mt-4">
-    <strong>Membership Fee:</strong> $10/year<br />
-    <em>Non-members will be charged a $3 Day Pass fee for each table.</em>
-  </div>
-</div>
+      <h2>{t('membership.title')}</h2>
 
-## Hourly Rates
+      <div className="membership-notice">
+        <h3>{t('membership.benefits')}</h3>
+        <p>{t('membership.privileges')}</p>
+        <ul>
+          <li>{t('membership.waiveDayPass')}</li>
+        </ul>
+        
+        <div className="mt-4">
+          <strong>{t('membership.fee')}</strong> {t('membership.feeAmount')}<br />
+          <em>{t('membership.nonMemberNote')}</em>
+        </div>
+      </div>
 
-| Table Type       | Day Rate (11AM-6PM) | Night Rate (6PM-Close) |
-|------------------|---------------------|-----------------------|
-| Standard Pool Tables  | $18/hour            | $20/hour              |
-| Chinese Pool Tables | $18/hour            | $20/hour              |
-| Snooker Tables | $20/hour            | $22/hour              |
+      <h2>{t('hourlyRates.title')}</h2>
 
-## Happy Hour (Monday to Friday 11AM-6PM)
+      <table>
+        <thead>
+          <tr>
+            <th>{t('hourlyRates.tableType')}</th>
+            <th>{t('hourlyRates.dayRate')}</th>
+            <th>{t('hourlyRates.nightRate')}</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>{t('hourlyRates.standardPool')}</td>
+            <td>{t('hourlyRates.rate18')}</td>
+            <td>{t('hourlyRates.rate20')}</td>
+          </tr>
+          <tr>
+            <td>{t('hourlyRates.chinesePool')}</td>
+            <td>{t('hourlyRates.rate18')}</td>
+            <td>{t('hourlyRates.rate20')}</td>
+          </tr>
+          <tr>
+            <td>{t('hourlyRates.snooker')}</td>
+            <td>{t('hourlyRates.rate20')}</td>
+            <td>{t('hourlyRates.rate22')}</td>
+          </tr>
+        </tbody>
+      </table>
 
-<div class="bg-yellow-100 p-4 rounded-lg">
-- Standard Pool Table: $25/person (before tax)
-- Chinese Pool Table: $33/person (before tax)
-- Snooker Table: $33/person (before tax)
-</div>
+      <h2>{t('happyHour.title')}</h2>
+
+      <div className="bg-yellow-100 p-4 rounded-lg">
+        <ul>
+          <li>{t('happyHour.standardPool')}</li>
+          <li>{t('happyHour.chinesePool')}</li>
+          <li>{t('happyHour.snooker')}</li>
+        </ul>
+      </div>
+    </>
+  );
+}

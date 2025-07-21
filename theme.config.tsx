@@ -1,5 +1,7 @@
 import React from 'react'
 import { DocsThemeConfig } from 'nextra-theme-docs'
+import { useRouter } from 'next/router';
+import { useTranslations } from 'next-intl';
 
 const config: DocsThemeConfig = {
   logo: (
@@ -7,8 +9,65 @@ const config: DocsThemeConfig = {
       🎱 MASTER Q
     </span>
   ),
+  useNextSeoProps() {
+    const { asPath } = useRouter();
+    if (asPath === '/') {
+      return {
+        title: 'Master Q Menu'
+      };
+    }
+    return {
+      titleTemplate: '%s – Master Q Menu'
+    };
+  },
+  i18n: [
+    { locale: 'en', text: 'English' },
+    { locale: 'zh-CN', text: '简体中文' },
+    { locale: 'zh-TW', text: '繁體中文' }
+  ],
+  sidebar: {
+    titleComponent({ title, type }) {
+      if (type != 'page') {
+        const { locale } = useRouter();
+        const titles = {
+          Homepage: {
+            en: 'Homepage',
+            'zh-CN': '首页',
+            'zh-TW': '首頁'
+          },
+          'Billiard Rates': {
+            en: 'Billiard Rates',
+            'zh-CN': '台球价格',
+            'zh-TW': '桌球價格'
+          },
+          'Food Menu': {
+            en: 'Food Menu',
+            'zh-CN': '食品菜单',
+            'zh-TW': '食品菜單'
+          },
+          'Drinks Menu': {
+            en: 'Drinks Menu',
+            'zh-CN': '饮品菜单',
+            'zh-TW': '飲品菜單'
+          },
+          'About Us': {
+            en: 'About Us',
+            'zh-CN': '关于我们',
+            'zh-TW': '關於我們'
+          },
+          'Facebook ↗': {
+            en: 'Facebook ↗',
+            'zh-CN': 'Facebook ↗',
+            'zh-TW': 'Facebook ↗'
+          }
+        };
+        return titles[title]?.[locale] || titles[title]?.en || title;
+      }
+      return title;
+    }
+  },
   search: {
-    placeholder: "Search anything...", // Custom placeholder
+    placeholder: "Looking for...", // Custom placeholder
   },
   docsRepositoryBase: 'https://github.com/shuding/nextra-docs-template',
   footer: {
