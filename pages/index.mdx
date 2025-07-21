@@ -1,26 +1,27 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import { useTranslations } from 'next-intl';
 
-# Master Q Menu
+# {useTranslations('home')('title')}
 
 <div className="hero-container">
   <Image 
     src="/images/venue.jpg" 
     layout="fill"
     objectFit="cover"
-    alt="Modern Billard Lounge"
+    alt={useTranslations('home')('title')}
     priority
   />
 </div>
 
-## Quick Access
+<h1 className="custom-heading">{useTranslations('home')('quickAccess.title')}</h1>
 
 <div className="quick-access-grid three-col">
   <Link href="/billards" passHref legacyBehavior>
     <a className="nav-card billiards">
       <div>
-        <h3>🎱 Billiard Rates</h3>
-        <p>Table packages & hourly rates</p>
+        <h3>{useTranslations('home')('quickAccess.billiards.title')}</h3>
+        <p>{useTranslations('home')('quickAccess.billiards.description')}</p>
       </div>
     </a>
   </Link>
@@ -28,8 +29,8 @@ import Link from 'next/link';
   <Link href="/food" passHref legacyBehavior>
     <a className="nav-card food">
       <div>
-        <h3>🍔 Food Menu</h3>
-        <p>Snacks, mains & late-night bites</p>
+        <h3>{useTranslations('home')('quickAccess.food.title')}</h3>
+        <p>{useTranslations('home')('quickAccess.food.description')}</p>
       </div>
     </a>
   </Link>
@@ -37,8 +38,8 @@ import Link from 'next/link';
   <Link href="/drink" passHref legacyBehavior>
     <a className="nav-card drinks">
       <div>
-        <h3>🍹 Drinks Menu</h3>
-        <p>Beers, cocktails & non-alcoholic</p>
+        <h3>{useTranslations('home')('quickAccess.drinks.title')}</h3>
+        <p>{useTranslations('home')('quickAccess.drinks.description')}</p>
       </div>
     </a>
   </Link>
@@ -47,7 +48,7 @@ import Link from 'next/link';
 ---
 
 <div className="social-container">
-  <h3>Stay Connected</h3>
+  <h3>{useTranslations('home')('social.stayConnected')}</h3>
   <div className="social-links">
     <a 
       href="https://www.instagram.com/masterq.billiards/?hl=en" 
@@ -55,7 +56,7 @@ import Link from 'next/link';
       rel="noopener noreferrer"
       className="instagram-link"
     >
-      Instagram
+      {useTranslations('home')('social.instagram')}
     </a>
     <span className="divider">|</span>
     <a 
@@ -64,7 +65,7 @@ import Link from 'next/link';
       rel="noopener noreferrer"
       className="facebook-link"
     >
-      Facebook
+      {useTranslations('home')('social.facebook')}
     </a>
   </div>
 </div>

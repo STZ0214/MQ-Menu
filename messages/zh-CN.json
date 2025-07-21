@@ -1,0 +1,56 @@
+{
+  "home": {
+    "title": "Master Q 菜单",
+    "quickAccess": {
+      "title": "快速访问",
+      "billiards": {
+        "title": "🎱 台球价格",
+        "description": "桌台套餐和小时费率"
+      },
+      "food": {
+        "title": "🍔 食品菜单",
+        "description": "小吃、主菜和深夜美食"
+      },
+      "drinks": {
+        "title": "🍹 饮品菜单",
+        "description": "啤酒、鸡尾酒和无酒精饮料"
+      }
+    },
+    "social": {
+      "stayConnected": "社交媒体",
+      "instagram": "Instagram",
+      "facebook": "Facebook"
+    }
+  },
+  
+  "billards": {
+    "title": "台球桌台和价格",
+    "membership": {
+      "title": "会员",
+      "benefits": "会员福利",
+      "privileges": "作为 Master Q 会员享受特别优惠：",
+      "waiveDayPass": "每次访问免除一张桌台的日通行证费用",
+      "fee": "会员费：",
+      "feeAmount": "$10/年",
+      "nonMemberNote": "非会员将被收取每张桌台$3的日通行证费用。"
+    },
+    "hourlyRates": {
+      "title": "每小时价格",
+      "tableType": "桌台类型",
+      "dayRate": "日间价格 (11AM-6PM)",
+      "nightRate": "夜间价格 (6PM-关闭)",
+      "standardPool": "标准台球桌",
+      "chinesePool": "中国式台球桌",
+      "snooker": "斯诺克台球桌",
+      "rate18": "$18/小时",
+      "rate20": "$20/小时",
+      "rate22": "$22/小时"
+    },
+    "happyHour": {
+      "title": "欢乐时光 (周一至周五 11AM-6PM)",
+      "standardPool": "标准台球桌: $25/人 (税前)",
+      "chinesePool": "中国式台球桌: $33/人 (税前)",
+      "snooker": "斯诺克台球桌: $33/人 (税前)"
+    }
+  }
+}
