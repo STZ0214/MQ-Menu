@@ -1,23 +1,27 @@
-# Nextra Docs Template 
+# MQ-Menu: Modern Digital Menu Web Application
 
-This is a template for creating documentation with [Nextra](https://nextra.site).
+A responsive, interactive digital menu built with Next.js and React. This personal project was developed to explore modern frontend frameworks, component-based architecture, and mobile-first UI/UX design.
 
-[**Live Demo →**](https://nextra-docs-template.vercel.app)
+## 🚀 Live Demo
+[View the Live Website](https://masterq.vercel.app/)
 
-[![](.github/screenshot.png)](https://nextra-docs-template.vercel.app)
+## 🛠️ Tech Stack
+* **Framework:** Next.js, React
+* **Styling:** CSS / Tailwind CSS (根据你实际用的修改)
+* **Deployment:** Vercel
 
-## Quick Start
+## ✨ Key Features
+* **Mobile-Optimized UI:** Designed to provide a seamless, app-like experience on smartphones and tablets.
+* **Modern Component Architecture:** Built with reusable React components for maintainability and scalability.
+* **Responsive Design:** Adapts fluidly to different screen sizes.
 
-Click the button to clone this repository and deploy it on Vercel:
+## 💻 Getting Started
+To run this project locally:
 
-[![](https://vercel.com/button)](https://vercel.com/new/clone?s=https%3A%2F%2Fgithub.com%2Fshuding%2Fnextra-docs-template&showOptionalTeamCreation=false)
-
-## Local Development
-
-First, run `pnpm i` to install the dependencies.
-
-Then, run `pnpm dev` to start the development server and visit localhost:3000.
-
-## License
-
-This project is licensed under the MIT License.
+1. Clone the repository:
+   `git clone https://github.com/STZ0214/MQ-Menu.git`
+2. Install dependencies:
+   `npm install`
+3. Start the development server:
+   `npm run dev`
+4. Open [http://localhost:3000](http://localhost:3000) in your browser.
