@@ -7,6 +7,5 @@ module.exports = withNextra({
   i18n: {
     locales: ['en', 'zh-CN', 'zh-TW'],
     defaultLocale: 'en',
-    localeDetection: true // Automatically detect user's browser language
   }
 });

@@ -16,10 +16,10 @@ export function middleware(request) {
     return NextResponse.next();
   }
 
-  // Check if the path already starts with a locale
-  if (locales.some((loc) => pathname.startsWith(`/${loc}/`))) {
-    return NextResponse.next(); // Let Nextra handle the route
-  }
+  // Determine the current locale from the pathname or default to the default locale
+  let locale = locales.find((loc) => pathname.startsWith(`/${loc}/`) || pathname === `/${loc}`) || defaultLocale;
+
+  return NextResponse.next(); // Proceed if the path already has a locale
 }
 
 export const config = {
